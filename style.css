@@ -1,8 +1,10 @@
 /* General setup */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap");
 
 :root {
-  --default-font: 'Poppins', sans-serif;
+  --default-font: "Poppins", sans-serif;
+  --primary-color: #2374ee;
+  --hero-bg-color: #ebf2ff;
 }
 
 * {
@@ -12,7 +14,15 @@
 a {
   text-decoration: none;
 }
-
+button {
+  border-radius: 25px;
+  border: none;
+  padding: 1rem 2rem;
+}
+.button--primary {
+  background-color: var(--primary-color);
+  color: white;
+}
 /* Header styles */
 header {
   display: flex;
@@ -30,4 +40,12 @@ header {
 .logo-text {
   font-weight: 700;
   font-size: 1.5rem;
+}
+
+/* Hero Styles */
+.hero_top {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 5rem;
+  background-color: var(--hero-bg-color);
 }
